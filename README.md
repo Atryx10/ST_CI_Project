@@ -5,7 +5,7 @@ This report outlines the development of Continuous Integration (CI) using six di
 
 Continuous Integration is a software development practice that involves continuously merging code changes into a central repository, and then automatically building, testing, and deploying the application. This practice helps to identify issues early in the development process, which leads to faster feedback and faster resolution of issues.
 
-Code repository link: https://github.com/Atryx10/ST_CI_Project
+Code Repository Link: https://github.com/Atryx10/ST_CI_Project
 
 
 SUMMARY OF THE CONTINUOUS INTEGRATION ENVIRONMENT
