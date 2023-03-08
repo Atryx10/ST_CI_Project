@@ -1,5 +1,8 @@
-import org.junit.Test;
+package test.java.ST_CI_Project;
+
 import static org.junit.Assert.*;
+import org.junit.Test;
+import main.java.ST_CI_Project.Calculator;
 
 public class CalculatorTest {
     @Test

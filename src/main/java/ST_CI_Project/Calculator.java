@@ -1,3 +1,5 @@
+package main.java.ST_CI_Project;
+
 import java.util.Scanner;
 
 public class Calculator {
