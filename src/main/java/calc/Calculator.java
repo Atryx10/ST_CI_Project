@@ -35,4 +35,9 @@ public class Calculator {
 
         System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
     }
+
+    public int add(int a, int b)
+    {
+        return 0;
+    }
 }
