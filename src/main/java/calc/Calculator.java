@@ -1,3 +1,4 @@
+package main.java.calc;
 import java.util.Scanner;
 
 public class Calculator {
@@ -34,5 +35,10 @@ public class Calculator {
         }
 
         System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+    }
+
+    public static int add(int a, int b)
+    {
+        return a + b;
     }
 }
