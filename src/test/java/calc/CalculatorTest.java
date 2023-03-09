@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 public class CalculatorTest {
     @Test
     public void testAddition() {
-        int result = 8;//Calculator.add(5, 3);
+        int result = Calculator.add(5, 3);
         assertEquals(8, result);
     }
 
