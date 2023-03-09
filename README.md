@@ -1,9 +1,9 @@
 # ST_CI_Project
 Report on CI enironment setup and integration test
 
-This report outlines the development of Continuous Integration (CI) using six different types of tools or components to automatically run unit and integration tests. The CI environment enables automated tests to be performed accurately, resulting in good quality assurance.
+This study describes the creation of Continuous Integration (CI), which runs unit and integration tests automatically utilizing six different kinds of tools or components. Accurate automated test execution is made possible by the CI environment, which leads to high quality assurance.
 
-Continuous Integration is a software development practice that involves continuously merging code changes into a central repository, and then automatically building, testing, and deploying the application. This practice helps to identify issues early in the development process, which leads to faster feedback and faster resolution of issues.
+A software development technique called continuous integration entails automatically creating, testing, and deploying the application after continuously merging code changes into a single repository. By identifying problems early on in the development process, this method facilitates quicker feedback and quicker problem-solving.
 
 Code Repository Link: https://github.com/Atryx10/ST_CI_Project
 
@@ -17,20 +17,60 @@ The six tools in our CI environment are designed to be user-friendly and easy to
 
 Eclipse, GitK, and JUnit fall under the OFFLINE user-controlled category, which means they can be operated locally without requiring an internet connection. On the other hand, Github is categorized under the ONLINE user-controlled category as it operates through the internet.
 
-Jenkins is a versatile tool that can handle both OFFLINE and ONLINE categories as it manages the storage and execution parts of any project. It acts as a bridge between Github and Maven, which is a server controller that facilitates the loading and execution of code.
+Jenkins is a versatile tool that can handle both OFFLINE and ONLINE categories as it manages the storage and execution parts of any project. Between Github and Maven, a server controller that makes it easier to load and run code, it serves as a bridge.
 
-With the help of these tools, we can build and execute our project, as well as run unit and integrated tests. This ensures that our codebase is always up-to-date and stable, enabling us to catch and fix issues quickly.
+Our project can be created and carried out with the aid of these tools, and unit and integrated tests can also be run. Due to the constant updating and stability of our software, we are able to identify and address problems as soon as they arise.
 
-Working Methodology
+##Working Methodology##
 
-To initiate the CI process for our project, the first step is to create a Github account for storing the project or repository file. This allows us to collaborate with other developers on group projects by sharing and accessing resources through the Github platform. Once the Github account is created, we can import the required resources to the online storage repository of our application, such as a calculator. 
-This ensures that all project resources are stored in a centralized location, making it easy for the team to access and work on them collaboratively. To ensure that the code is interpreted correctly, it is important to make sure that all resources are successfully stored in Github. 
-This helps to avoid any potential issues that may arise due to code inconsistencies or conflicts between team members. Overall, using Github for project storage is a crucial part of our CI process that helps to ensure the success of our project.
+The first step is to set up a Github account so that we can save the project or repository file there and start the CI process for our project. By sharing and gaining access to resources via the Github platform, this enables us to work together with other engineers on team projects. We can import the necessary resources, like a calculator, to our application's online storage repository after creating the Github account.
+As a result, the team can easily access and collaborate on all project resources because they are kept in a single, convenient area. It is crucial to verify that all resources are successfully stored in Github in order to guarantee that the code is interpreted correctly.
+By doing so, it is possible to prevent any prospective problems.
+
+
+Diagram
 
 To evaluate the code, it needs to be cloned and imported from the Github account. We prefer to use GitK to extract the code. With GitK, the code can be read but cannot be edited or modified. The code is then imported to a specified destination folder.
 
-From the destination folder, it is then passed on to an Integrated Development Environment (IDE) tool such as Eclipse. The IDE tool provides a graphical user interface (GUI) to allow developers to easily navigate and modify the code.
+It is then transferred from the destination folder to an Integrated Development Environment (IDE) tool like Eclipse. A graphical user interface (GUI) is offered by the IDE tool to make it simple for developers to browse and edit the code.
 
-This step is crucial for ensuring that all code changes and updates are properly tracked and documented for future reference. Overall, using GitK and Eclipse in combination is an essential part of our CI process for evaluating and modifying the code.
+This phase is essential for making sure that all updates and modifications to the code are correctly monitored and recorded for future use. Overall, using GitK and Eclipse in combination is an essential part of our CI process for evaluating and modifying the code.
+
+Architecture 
+
+
+
+
+
+
+
+Code created in the Java programming language can be read and modified using the Eclipse Integrated Development Environment (IDE). The code can only be run, though, if it has access to the necessary libraries. One such package that is frequently utilized as a framework for unit testing Java applications is JUnit.
+
+Instead of being removed from the code repository when changes are made to the code in Eclipse, the code is automatically saved in the GitKraken version control system. The "Commit" and "Push" commands can be used to push the code to Github after it has been improved. The customized code is safely kept and made available to other users thanks to this procedure.
+
+The Jenkins server is used to test the code and obtain expected results. The server can only receive code changes through the Maven plugins, which are provided as part of the build process. Every time the code is modified in Eclipse using JUnit, GitKraken commits and pushes the changes to Github. Jenkins then uses the Maven plugins to process the code. Before being released, the code is carefully tested and verified thanks to this procedure.
+
+This working procedure is illustrated through the development of a calculator application.
+
+
+TECHNICAL TOOL SELECTION MOTIVATING FACTORS
+
+The technical selection of tools was quite simple. These tools saw the most use for our project when compared to other tools. Here are a few of the characteristics that we were persuaded to use in order to inspire the instruments that were chosen.
+
+
+GITHUB: Java-based web applications are quite simple to run on Github. Besides Bitbucket, all Java-based web applications can be used for free. Ø As the project is familiar with Github, extracting developed code and running it was simpler than anticipated. When we make modifications to our project, it is useful to keep track of the results and the individuals that contributed to the change.
+
+Eclipse: We required a suitable environment in order to create and run our code. As a result, we decided to use Eclipse as our development platform for editing code. Eclipse was selected mainly because our project's developers are experienced with it. The development process has become more precise and effective as a result. We were able to streamline our code editing and increase the effectiveness of our development work by using Eclipse.
+
+Jenkins: 
+We made use of Jenkins server to create a continuous integration environment that links many technologies. We were able to swiftly detect and address problems because to the diagnostic output and error notifications we were able to get from Jenkins. This made it possible for us to build and alter our project more accurately and effectively, enabling us to provide excellent outcomes on schedule.
+
+Maven: Maven is a well-known build automation tool mainly utilized for Java applications. For the creation and administration of Java-based projects from a single repository, it offers a complete framework. By establishing a project structure, controlling dependencies, and automating the build process, Maven streamlines the development process.
+
+Using Maven has significant benefits, one of which is the ease with which it can be connected to other programs like GitHub and Jenkins thanks to the integration of numerous plugins. Continuous integration and deployment of Java applications are made possible via the Maven plugin for Jenkins. This enables programmers to speed up and improve the build, test, and deployment processes by automating them.
+
+Internal Discussion in the team
+
+
 
 
