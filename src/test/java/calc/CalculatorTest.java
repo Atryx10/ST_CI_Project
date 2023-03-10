@@ -22,11 +22,35 @@ public class CalculatorTest {
     //     assertEquals(15, result);
     // }
 
-    // @Test
-    // public void testDivision() {
-    //     int result = Calculator.divide(6, 3);
-    //     assertEquals(2, result);
-    // }
+    @Test
+    public void testDivision() {
+        assertEquals(0.5, Calculator.divide(1, 2), 0);
+    }
+
+    @Test
+    public void testDivisionNegative() {
+        assertEquals(-0.5, Calculator.divide(1, -2), 0);
+    }
+
+    @Test
+    public void testDivisionExtremeMAX() {
+        assertEquals(-1, Calculator.divide(Double.MAX_VALUE, -Double.MAX_VALUE), 0);
+    }
+
+    @Test
+    public void testDivisionExtremeMIN() {
+        assertEquals(-1, Calculator.divide(Double.MIN_VALUE, -Double.MIN_VALUE), 0);
+    }
+
+    @Test
+    public void testDivisionZero() {
+        assertEquals(Double.MAX_VALUE*1.01, Calculator.divide(1, 0), 0);
+    }
+
+    @Test
+    public void testDivisionNaN() {
+        assertEquals(Double.MAX_VALUE*1.01, Calculator.divide(1, 0), 0);
+    }
 
     // @Test(expected = IllegalArgumentException.class)
     // public void testDivisionByZero() {
