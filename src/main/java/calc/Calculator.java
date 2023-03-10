@@ -31,10 +31,13 @@ public class Calculator {
                 break;
             default:
                 System.out.println("Error: Invalid operator.");
+                scanner.close();
                 return;
         }
 
         System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+        scanner.close();
+
     }
 
     public static int add(int a, int b)
