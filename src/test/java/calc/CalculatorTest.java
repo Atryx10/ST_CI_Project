@@ -10,11 +10,21 @@ public class CalculatorTest {
         assertEquals(8, result);
     }
 
-    // @Test
-    // public void testSubtraction() {
-    //     int result = Calculator.subtract(5, 3);
-    //     assertEquals(2, result);
-    // }
+    @Test
+    public void testSubtraction() {
+        int result = Calculator.subtract(5, 3);
+        assertEquals(2, result);
+    }
+    @Test
+    public void testSubtractionNegativeValue() {
+        int result = Calculator.subtract(5, -3);
+        assertEquals(8, result);
+    }
+    @Test
+    public void testSubtractionTwoNegativeValue() {
+        int result = Calculator.subtract(-5, -3);
+        assertEquals(-2, result);
+    }
 
     // @Test
     // public void testMultiplication() {
