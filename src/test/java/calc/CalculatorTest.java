@@ -66,4 +66,11 @@ public class CalculatorTest {
     // public void testDivisionByZero() {
     //     Calculator.divide(6, 0);
     // }
+
+    @Test
+    public void testMultiplication(){
+        double result = Calculator.multiply(3, 2);
+        assertEquals(6, result, 0);
+    }
+
 }
