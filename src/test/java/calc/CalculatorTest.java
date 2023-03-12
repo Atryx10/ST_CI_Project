@@ -57,6 +57,7 @@ public class CalculatorTest {
         assertEquals(Double.MAX_VALUE*1.01, Calculator.divide(1, 0), 0);
     }
     
+    
     @Test
     public void testDivisionNaN() {
         assertEquals(Double.MAX_VALUE*1.01, Calculator.divide(3, 0), 0);
