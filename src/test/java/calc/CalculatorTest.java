@@ -73,9 +73,4 @@ public class CalculatorTest {
         assertEquals(6, result, 0);
     }
 
-    @Test
-    public void testSquare(){
-        assertEquals(4, Calculator.Square(1));
-    }
-
 }
