@@ -60,4 +60,8 @@ public class Calculator {
         return a * b;
     }
 
+    public Object Square(int a) {
+        return a*(a-1);
+    }
+
 }
