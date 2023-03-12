@@ -70,7 +70,7 @@ public class CalculatorTest {
     @Test
     public void testMultiplication(){
         double result = Calculator.multiply(3, 2);
-        assertEquals(6, result, 0);
+        assertEquals(, result, 0);
     }
 
 }
