@@ -59,7 +59,7 @@ public class CalculatorTest {
 
     @Test
     public void testDivisionNaN() {
-        assertEquals(Double.MAX_VALUE*1.01, Calculator.divide(3, 0), 0);
+        assertEquals(Double.MAX_VALUE*1.01, Calculator.divide(0, 0), 0);
     }
 
     // @Test(expected = IllegalArgumentException.class)
