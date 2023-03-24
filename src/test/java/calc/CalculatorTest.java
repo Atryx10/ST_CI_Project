@@ -6,24 +6,24 @@ import calc.*;
 public class CalculatorTest {
     @Test
     public void testAddition() {
-        int result = Calculator.add(5, 3);
-        assertEquals(8, result);
+        double result = Calculator.add(5, 3);
+        assertEquals(8, result, 0);
     }
 
     @Test
     public void testSubtraction() {
-        int result = Calculator.subtract(5, 3);
-        assertEquals(2, result);
+        double result = Calculator.subtract(5, 3);
+        assertEquals(2, result, 0);
     }
     @Test
     public void testSubtractionNegativeValue() {
-        int result = Calculator.subtract(5, -3);
-        assertEquals(8, result);
+        double result = Calculator.subtract(5, -3);
+        assertEquals(8, result, 0);
     }
     @Test
     public void testSubtractionTwoNegativeValue() {
-        int result = Calculator.subtract(-5, -3);
-        assertEquals(-2, result);
+        double result = Calculator.subtract(-5, -3);
+        assertEquals(-2, result, 0);
     }
 
     // @Test
@@ -75,4 +75,19 @@ public class CalculatorTest {
         assertEquals(6, result, 0);
     }
 
+
+    @Test
+    public void integrationTest0(){
+        // ((3 + 2) - 2.3) * 5.3 / 7 + 9
+        double result = Calculator.add(3,  2);
+        result = Calculator.subtract(result, 2.3);
+        result = Calculator.multiply(result, 5.3);
+        result = Calculator.divide(result,   7);
+        result = Calculator.add(result,      9);
+
+        double correct = ((3 + 2) - 2.3) * 5.3 / 7 + 9;
+
+        assertEquals(correct, result, 0);
+    }
+    
 }
