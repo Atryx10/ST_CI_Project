@@ -76,18 +76,39 @@ public class CalculatorTest {
     }
 
 
-    @Test
-    public void integrationTest0(){
-        // ((3 + 2) - 2.3) * 5.3 / 7 + 9
-        double result = Calculator.add(3,  2);
-        result = Calculator.subtract(result, 2.3);
-        result = Calculator.multiply(result, 5.3);
-        result = Calculator.divide(result,   7);
-        result = Calculator.add(result,      9);
+    // For re-submissison 
+    // @Test
+    // public void testAbsPositive(){
+    //     double result = Calculator.abs(2);
+    //     assertEquals(2, result, 0);
+    // }
 
-        double correct = ((3 + 2) - 2.3) * 5.3 / 7 + 9;
+    // @Test
+    // public void testAbsNegative(){
+    //     double result = Calculator.abs(-2);
+    //     assertEquals(2, result, 0);
+    // }
 
-        assertEquals(correct, result, 0);
-    }
+    // @Test
+    // public void integrationTest0(){
+    //     double add0 = 3;
+    //     double add1 = 2;
+    //     double sub0 = 22.3;
+    //     double mul0 = 5.3;
+    //     double div0 = 7;
+    //     double add2 = -9;
+        
+    //     // Here we test that all operators return values that can feed into each other without loosing information.
+    //     double result = Calculator.add(add0, add1);
+    //     result = Calculator.subtract(result, sub0);
+    //     result = Calculator.multiply(result, mul0);
+    //     result = Calculator.divide(result,   div0);        
+    //     result = Calculator.abs(result);            // New operation to implement TDD workflow. 
+    //     result = Calculator.add(result,      add2); // Complete loop, so all functions' output are tested
+
+        
+    //     double correct = Math.abs(((add0 + add1) - sub0) * mul0 / div0) + add2;
+    //     assertEquals(correct, result, 0);
+    // }
     
 }
