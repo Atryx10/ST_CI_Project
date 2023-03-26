@@ -40,12 +40,12 @@ public class Calculator {
 
     }
 
-    public static int add(int a, int b)
+    public static double add(double a, double b)
     {
         return a+b;
     }
 
-    public static int subtract(int a, int b )
+    public static double subtract(double a, double b)
     {
         return a-b;
     }
@@ -60,4 +60,10 @@ public class Calculator {
         return a * b;
     }
 
+    // For re-submission
+
+    // public static double abs(double a)
+    // {
+    //     return Math.abs(a);
+    // }
 }
