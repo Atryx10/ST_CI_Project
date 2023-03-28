@@ -26,11 +26,11 @@ public class CalculatorTest {
         assertEquals(-2, result, 0);
     }
 
-    // @Test
-    // public void testMultiplication() {
-    //     int result = Calculator.multiply(5, 3);
-    //     assertEquals(15, result);
-    // }
+    @Test
+    public void testMultiplication() {
+        int result = Calculator.multiply(5, 3);
+        assertEquals(15, result);
+    }
 
     @Test
     public void testDivision() {
@@ -64,10 +64,10 @@ public class CalculatorTest {
     }
 
     
-    // @Test(expected = IllegalArgumentException.class)
-    // public void testDivisionByZero() {
-    //     Calculator.divide(6, 0);
-    // }
+    @Test(expected = IllegalArgumentException.class)
+    public void testDivisionByZero() {
+        Calculator.divide(6, 0);
+    }
 
     @Test
     public void testMultiplication(){
