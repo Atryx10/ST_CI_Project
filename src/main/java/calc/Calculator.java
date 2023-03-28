@@ -60,8 +60,6 @@ public class Calculator {
         return a * b;
     }
 
-    For re-submission
-
     public static double abs(double a)
      {
          return Math.abs(a);
