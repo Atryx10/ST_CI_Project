@@ -60,8 +60,8 @@ public class Calculator {
         return a * b;
     }
 
-    // public static double abs(double a)
-    //  {
-    //      return Math.abs(a);
-    //  }
+    public static double abs(double a)
+     {
+         return Math.abs(a);
+     }
 }
